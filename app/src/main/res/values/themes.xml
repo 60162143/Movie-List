@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GoCafeinCodingTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.GoCafein" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Custom font 적용 -->
+        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>
+        <item name="android:buttonStyle">@style/customButtonFontStyle</item>
+        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>
+
+        <!-- Animation Transition 적용 -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- Custom font -->
+    <style name="customTextViewFontStyle" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/electrical_safety_regular</item>
+    </style>
+
+    <style name="customButtonFontStyle" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:fontFamily">@font/electrical_safety_regular</item>
+    </style>
+
+    <style name="customEditTextFontStyle" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/electrical_safety_regular</item>
+    </style>
+    <!-- /Custom font -->
+
+    <style name="Theme.GoCafeinCodingTest" parent="Base.Theme.GoCafeinCodingTest" />
+</resources>
